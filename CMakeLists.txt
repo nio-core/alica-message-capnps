@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(AlicaMessages)
+project(alica-messages)
 
 file(GLOB_RECURSE SOURCES "*.c++" "*.h")
 
