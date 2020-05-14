@@ -5,6 +5,7 @@ project(alica-messages)
 file(GLOB_RECURSE PROTOS "*.capnp")
 
 message(STATUS "Generating code for capnproto messages")
+execute_process(COMMAND mkdir ${CMAKE_CURRENT_SOURCE_DIR}/src)
 execute_process(COMMAND 
     capnp compile 
         -I ${CMAKE_CURRENT_SOURCE_DIR}/proto 
