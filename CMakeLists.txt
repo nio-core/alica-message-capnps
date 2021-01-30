@@ -21,6 +21,8 @@ target_include_directories(${PROJECT_NAME} PUBLIC src)
 target_compile_definitions(${PROJECT_NAME} PRIVATE std_cxx_17)
 
 install(TARGETS ${PROJECT_NAME}
+        ARCHIVE
+            DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
         LIBRARY
             DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
         RUNTIME
